@@ -1,0 +1,57 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue-title: #3026df;
+    --pink-subtitle: #df2678;
+    --yellow-alert: #d5df26;
+    --green-alert: #26df8c;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: center;
+    font-size: var(--md);
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    color: var(--blue-title);
+}
+
+.titulo-secundario{
+    font-size: var(--lg);
+}
+
+.cabecera p {
+    color: var(--pink-subtitle);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.figuras {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 35rem;
+}
+
+.form-figura{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form-figura label{
+    font-size: var(--sm);
+}

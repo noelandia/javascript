@@ -5,12 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geom&eacute;tricas</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 <body>
-    <h1>
-        Figuras Geom&eacute;tricas
-    </h1>
+    <header class="cabecera">
+        <h1 class="titulo">
+            Figuras Geom&eacute;tricas
+        </h1>
+        <p>Esta es la primera pr&aacute;ctica de JS.</p>
+    </header>
+    
+    <div class="container">
+        <section class="figuras">
+            <h2 class="titulo-secundario">Calcula el &aacute;rea y per&iacute;metro de un cuadrado</h2>
 
+            <form class="form-figura">
+                <label for="InputCuadrado">
+                    Escribe cu&aacute;nto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el per&iacute;metro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el &aacute;rea
+                </button>
+            </form>
+        </section>
+
+        <section class="figuras">
+            <h2 class="titulo-secundario">Calcula el &aacute;rea y per&iacute;metro de un tri&aacute;ngulo</h2>
+
+            <form class="form-figura">
+                <label for="InputCuadrado">
+                    Escribe cu&aacute;nto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el per&iacute;metro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el &aacute;rea
+                </button>
+            </form>
+        </section>
+
+        <section class="figuras">
+            <h2 class="titulo-secundario">Calcula el &aacute;rea y per&iacute;metro de un c&iacute;rculo</h2>
+
+            <form class="form-figura">
+                <label for="InputCuadrado">
+                    Escribe cu&aacute;nto mide cada lado de tu cuadrado:
+                </label>
+                <input id="InputCuadrado" type="number" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el per&iacute;metro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el &aacute;rea
+                </button>
+            </form>
+        </section>
+    </div>
     <script src="./JS/figuras.js"></script>
 </body>
 </html>
