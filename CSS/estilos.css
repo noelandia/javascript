@@ -42,9 +42,15 @@ body {
 }
 
 .figuras {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 35rem;
+    width: 38rem;
+    height: 100%;
+    background-color: rgba(26, 167, 68, 0.4);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border-color: var(--green-alert);
+    border-width: medium;
+    border-style: outset;
+    box-shadow: 1rem 1rem 2rem var(--black);
 }
 
 .form-figura{
@@ -52,6 +58,62 @@ body {
     flex-flow: column wrap;
 }
 
+.inTriangulo{
+    display: grid;
+    grid-template-columns: 10rem auto;
+    margin-left: 6rem;
+}
+
+.inTriangulo select{
+    grid-column: 2;
+    width: 10.8rem;
+}
+
+.form-figura p{
+    font-size: var(--sm);
+    margin-bottom: 1rem;
+}
+
 .form-figura label{
     font-size: var(--sm);
+    margin-bottom: 1rem;
+}
+
+.form-figura input{
+    width: 10rem;
+    align-self: center;
+    
+}
+
+.form-figura span{
+    font-size: var(--lg);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: row wrap;
+    margin: 2rem;
+}
+
+.botones button{
+    width: 10rem;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    background-color:bisque;
+    color: var(--black);
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--black);
+}
+
+.botones button:hover{
+    background-color: var(--blue-title);
+    color: var(--white);
 }

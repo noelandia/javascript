@@ -43,17 +43,56 @@ function areaCirculo(radioCirculo){
 }
 
 function calcularPerimetroCuadrado(){
+    const medida = document.getElementById("med-cuadrado").value;
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    document.getElementById("res-cuadrado").innerHTML = `El per&iacute;metro es: ${perimetro} ${medida}`;
 }
 
 function calcularAreaCuadrado(){
+    const medida = document.getElementById("med-cuadrado").value;
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    document.getElementById("res-cuadrado").innerHTML = `El &aacute;rea es: ${area} ${medida}`;
+}
+
+function calcularPerimetroTriangulo(){
+    const medida = document.getElementById("med-triangulo").value;
+    const ladoA = new Number(document.getElementById("InputLadoA").value);
+    const ladoB = new Number(document.getElementById("InputLadoB").value);
+    const base = new Number(document.getElementById("InputBase").value);
+
+    const perimetro = perimetroTriangulo(ladoA,ladoB,base);
+    document.getElementById("res-triangulo").innerHTML = `El per&iacute;metro es: ${perimetro} ${medida}`;
+}
+
+function calcularAreaTriangulo(){
+    const medida = document.getElementById("med-triangulo").value;
+    const altura = document.getElementById("InputAltura").value;
+    const base = document.getElementById("InputBase").value;
+
+    const area = areaTriangulo(altura,base);
+    document.getElementById("res-triangulo").innerHTML = `El &aacute;rea es: ${area} ${medida}`;
+}
+
+function calcularPerimetroCirculo(){
+    const medida = document.getElementById("med-circulo").value;
+    const input = document.getElementById("InputCirculo");
+    const value = input.value;
+
+    const perimetro = perimetroCirculo(value).toFixed(4);
+    document.getElementById("res-circulo").innerHTML = `El per&iacute;metro es: ${perimetro} ${medida}`;
+}
+
+function calcularAreaCirculo(){
+    const medida = document.getElementById("med-circulo").value;
+    const input = document.getElementById("InputCirculo");
+    const value = input.value;
+
+    const area = areaCirculo(value).toFixed(4);
+    document.getElementById("res-circulo").innerHTML = `El &aacute;rea es: ${area} ${medida}`;
 }

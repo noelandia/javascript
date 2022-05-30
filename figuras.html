@@ -23,13 +23,23 @@
                 <label for="InputCuadrado">
                     Escribe cu&aacute;nto mide cada lado de tu cuadrado:
                 </label>
-                <input id="InputCuadrado" type="number" />
-                <button type="button" onclick="calcularPerimetroCuadrado()">
-                    Calcular el per&iacute;metro
-                </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
-                    Calcular el &aacute;rea
-                </button>
+                <div>
+                    <input id="InputCuadrado" type="number" />
+                    <select name="med-cuadrado" id="med-cuadrado">
+                        <option value="cm">Cent&iacute;metros</option>
+                        <option value="m">Metros</option>
+                        <option value="km">Kil&oacute;metros</option>
+                    </select>
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el per&iacute;metro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular el &aacute;rea
+                    </button>
+                </div>
+                <span name="res-cuadrado" id="res-cuadrado"></span>
             </form>
         </section>
 
@@ -37,16 +47,38 @@
             <h2 class="titulo-secundario">Calcula el &aacute;rea y per&iacute;metro de un tri&aacute;ngulo</h2>
 
             <form class="form-figura">
-                <label for="InputCuadrado">
-                    Escribe cu&aacute;nto mide cada lado de tu cuadrado:
-                </label>
-                <input id="InputCuadrado" type="number" />
-                <button type="button" onclick="calcularPerimetroCuadrado()">
-                    Calcular el per&iacute;metro
-                </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
-                    Calcular el &aacute;rea
-                </button>
+                <p>
+                    Escribe el tamaño de tu tri&aacute;ngulo:
+                </p>
+                <div class="inTriangulo">
+                    <label for="InputLadoA">Lado A</label>
+                    <input id="InputLadoA" type="number" />
+
+                    <label for="InputLadoB">Lado B</label>
+                    <input id="InputLadoB" type="number" />
+
+                    <label for="InputBase">Base</label>
+                    <input id="InputBase" type="number" />
+
+                    <label for="InputAltura">Altura</label>
+                    <input id="InputAltura" type="numer" />
+
+                    <select name="med-triangulo" id="med-triangulo">
+                        <option value="cm">Cent&iacute;metros</option>
+                        <option value="m">Metros</option>
+                        <option value="km">Kil&oacute;metros</option>
+                    </select>
+                </div>
+
+                <div class="botones">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular el per&iacute;metro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular el &aacute;rea
+                    </button>
+                </div>
+                <span name="res-triangulo" id="res-triangulo"></span>
             </form>
         </section>
 
@@ -54,16 +86,26 @@
             <h2 class="titulo-secundario">Calcula el &aacute;rea y per&iacute;metro de un c&iacute;rculo</h2>
 
             <form class="form-figura">
-                <label for="InputCuadrado">
-                    Escribe cu&aacute;nto mide cada lado de tu cuadrado:
+                <label for="InputCirculo">
+                    Escribe cu&aacute;nto mide el radio de tu c&iacute;rculo:
                 </label>
-                <input id="InputCuadrado" type="number" />
-                <button type="button" onclick="calcularPerimetroCuadrado()">
-                    Calcular el per&iacute;metro
-                </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
-                    Calcular el &aacute;rea
-                </button>
+                <div>
+                    <input id="InputCirculo" type="number" />
+                    <select name="med-circulo" id="med-circulo">
+                        <option value="cm">Cent&iacute;metros</option>
+                        <option value="m">Metros</option>
+                        <option value="km">Kil&oacute;metros</option>
+                    </select>
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular el per&iacute;metro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular el &aacute;rea
+                    </button>
+                </div>
+                <span name="res-circulo" id="res-circulo"></span>
             </form>
         </section>
     </div>
