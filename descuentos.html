@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 <body>
-    <h1>Porcentajes y Descuentos</h1>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+    </header>
+
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+        <form class="form-descuentos">
+            <label for="InputPrice">Escribe el precio de tu producto</label>
+            <input id="InputPrice" type="number">
+
+            <label for="InputDiscount">Escribe el descuento de tu producto</label>
+            <input id="InputDiscount" type="number" onchange="limpiaDescuentoSelect()">
+
+            <label for="selectDescuentos">Selecciona el porcentaje de tu descuento</label>
+            <select name="selectDescuentos" id="selectDescuentos" onchange="limpiaDescuentoInput()">
+                <option value="0"></option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+                <option value="35">35%</option>
+                <option value="45">45%</option>
+            </select>
+
+            <button type="button" onclick="calcularPrecioPago()">Calcular el precio con descuento</button>
+
+            <p id="res-precio"></p>
+        </form>
+    </section>
 
     <script src="./JS/descuentos.js"></script>
 </body>

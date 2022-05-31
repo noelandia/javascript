@@ -117,3 +117,10 @@ body {
     background-color: var(--blue-title);
     color: var(--white);
 }
+
+.form-descuentos{
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 30rem 10rem;
+    width: 40rem;
+}
